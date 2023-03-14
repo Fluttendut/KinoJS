@@ -1,0 +1,40 @@
+/*body {*/
+/*    background-image: url("https://nordkystensdyrehospital.dk/media/17175/kastration_kat.png?mode=crop&width=600");*/
+/*}*/
+/*.card*/
+/*{ align-content: center;*/
+/*    width: 43%;*/
+/*    background-color: lightgray;*/
+/*    font-size: 230%;*/
+/*    border: 2px solid black;*/
+/*    padding-top: 1%;*/
+/*    padding-bottom: 1%;*/
+/*    margin-bottom: 2%;*/
+/*}*/
+
+
+/*body {*/
+/*!*    background-image: url(https://cdn.wallpapersafari.com/76/85/bKBuEa.jpg);*!*/
+/*!*    background-size: 100%;*!*/
+/*    display: flex;*/
+/*!*    flex-direction: column;*!*/
+/*!*    align-items: center;*!*/
+/*!*    justify-content: center;*!*/
+/*}*/
+
+.card {
+    overflow-scrolling: auto;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+body {padding-top: 15%}
+div.scroll {
+    /*width: 600px;*/
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*text-align: center;*/
+    padding: 20px;
+}
+
