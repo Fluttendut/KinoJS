@@ -32,12 +32,16 @@ function createTable(movie) {
     cell = row.insertCell(cellCount++)
     cell.innerHTML = movie.genre
     cell = row.insertCell(cellCount++)
-    cell.innerHTML = movie.genre
+    cell.innerHTML = movie.length
+    cell = row.insertCell(cellCount++)
+    cell.innerHTML = movie.rating
+    cell = row.insertCell(cellCount++)
+    cell.innerHTML = movie.ageRestriction
 
     //Update knap, sender kommune til PUT
     cell = row.insertCell(cellCount++)
     let pbUpdate = document.createElement("button")
-    pbUpdate.textContent = "Opdater"
+    pbUpdate.textContent = "Edit"
     pbUpdate.className = "buttonupdate"
     pbUpdate.addEventListener('click', function () {
         console.log("hej")
