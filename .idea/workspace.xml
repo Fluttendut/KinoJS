@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="Frontend">
+      <change afterPath="$PROJECT_DIR$/html/frontpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/MovieManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/MovieManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/fetchmovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fetchmovies.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Dokumenter/Java 2022/KinoJS/css"
+    "last_opened_file_path": "D:/Dokumenter/Java 2022/KinoJS/css",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,6 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678808741893</updated>
       <workItem from="1678808743103" duration="6618000" />
+      <workItem from="1678823851577" duration="137000" />
+      <workItem from="1678824024102" duration="4534000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>

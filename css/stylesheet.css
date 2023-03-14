@@ -19,3 +19,9 @@ div.scroll {
 
 .card-body {border-top: 1px solid; border-color: rgba(0, 0, 0, 0.175);}
 
+
+#movieManagerImg{
+    border:5px solid black;
+    width:40%;
+}
+
