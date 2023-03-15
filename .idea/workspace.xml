@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="HTML page donedone">
-      <change beforePath="$PROJECT_DIR$/html/addmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/addmovie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheetaddmovie.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetaddmovie.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <workItem from="1678808743103" duration="6618000" />
       <workItem from="1678823851577" duration="137000" />
       <workItem from="1678824024102" duration="4534000" />
-      <workItem from="1678870565589" duration="15021000" />
+      <workItem from="1678870565589" duration="16184000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>
@@ -131,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678886439935</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="HTML page donedone">
+      <created>1678886657963</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678886657963</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
