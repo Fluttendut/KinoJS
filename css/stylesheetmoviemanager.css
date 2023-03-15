@@ -4,7 +4,10 @@
     float: none;
     margin-bottom: 10px;
 }
-body {padding-top: 15%}
+body {
+    padding-top: 12%;
+    background-image: url("https://e0.pxfuel.com/wallpapers/182/698/desktop-wallpaper-classic-movie-classic-movie-poster.jpg");
+}
 
 div.scroll {
     /*text-align: center;*/

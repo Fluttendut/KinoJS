@@ -1,4 +1,3 @@
-console.log("Jeg er i fetch movies")
 const urlMovies = "http://localhost:8080/movies"
 
 function fetchAny(url) {
