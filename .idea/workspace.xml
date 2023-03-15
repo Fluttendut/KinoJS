@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="Add HTML page">
+      <change afterPath="$PROJECT_DIR$/js/createmovietable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/formmovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheetaddmovie.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetaddmovie.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/addmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/addmovie.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,6 +52,11 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
