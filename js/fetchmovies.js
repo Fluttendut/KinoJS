@@ -38,7 +38,7 @@ function createTable(movie) {
     cell = row.insertCell(cellCount++)
     cell.innerHTML = movie.ageRestriction
 
-    //Update knap, sender kommune til PUT
+
     cell = row.insertCell(cellCount++)
     let pbUpdate = document.createElement("button")
     pbUpdate.textContent = "Edit"
