@@ -48,10 +48,5 @@ p {
     border: none;
     color: #710000;}
 
-/*color: #000;*/
-/*text-align: center;*/
-/*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff8000, 0 0 20px #ff8000, 0 0 25px #ff8000, 0 0 30px #ff8000, 0 0 35px #ff8000;*/
-
-/*color: #000;*/
-/*text-align: center;*/
-/*text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 50px #ffd328, 0 0 50px #ff8000, 0 0 30px #ff6700, 0 0 67px #da531afa, 0 0 96px #ff1900;*/
+a:hover{
+    background-image: linear-gradient(45deg, #ff5555 , #fff179, #ff5992); cursor: pointer;}
