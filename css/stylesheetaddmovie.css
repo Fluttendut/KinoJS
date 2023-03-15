@@ -3,17 +3,20 @@
     margin: 0 auto;
     float: none;
     margin-bottom: 10px;
+    background-color: #cccccc;
 }
-/*body {*/
-/*    padding-top: 15%*/
-/*}*/
+
 body {
-    font-size: 12px;
-    line-height: 1.3;
-    font-family: Arial, Helvetica, Sans-Serif;
-    color: #ccc;
-    background: url("https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
-    background-size: auto;
+    /*font-size: 12px;*/
+    /*line-height: 1.3;*/
+    /*font-family: Arial, Helvetica, Sans-Serif;*/
+    /*color: #ccc;*/
+    padding-top: 11%;
+    height: 825px;
+    background: url("https://www.boxofficepro.com/wp-content/uploads/2022/03/ICE-THEATERS-Low-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
 }
 
 input {
@@ -23,3 +26,32 @@ input {
 label {
     font-weight: bold;
 }
+
+p {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+#cardText {
+    font-size: 67px;
+    color: #fff;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    text-shadow: 0 0 5px #e19e3b, 0 0 5px #ff8000, 0 0 50px #ffd328, 0 0 50px #ff8000, 0 0 30px #ff6700, 0 0 67px #da531afa, 0 0 96px #ff1900;
+}
+
+.gr-solid:hover .gradient-neon{
+    background-image: linear-gradient(45deg, #ff5555 , #fff179, #ff5992);}
+.gradient-neon {
+    background-image: linear-gradient(45deg, red , #FFEB3B, #ff2a73);
+    border: none;
+    color: #710000;}
+
+/*color: #000;*/
+/*text-align: center;*/
+/*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff8000, 0 0 20px #ff8000, 0 0 25px #ff8000, 0 0 30px #ff8000, 0 0 35px #ff8000;*/
+
+/*color: #000;*/
+/*text-align: center;*/
+/*text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 50px #ffd328, 0 0 50px #ff8000, 0 0 30px #ff6700, 0 0 67px #da531afa, 0 0 96px #ff1900;*/
