@@ -13,6 +13,7 @@ body {
     font-family: Arial, Helvetica, Sans-Serif;
     color: #ccc;
     background: url("https://images.unsplash.com/photo-1595769816263-9b910be24d5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2luZW1hfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    background-size: auto;
 }
 
 input {

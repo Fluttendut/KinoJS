@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="Frontend">
-      <change afterPath="$PROJECT_DIR$/css/stylesheetaddmovie.css" afterDir="false" />
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="Add HTML page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheetmoviemanager.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetmoviemanager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheetaddmovie.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetaddmovie.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/addmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/addmovie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/frontpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/fetchmovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fetchmovies.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +74,7 @@
       <workItem from="1678808743103" duration="6618000" />
       <workItem from="1678823851577" duration="137000" />
       <workItem from="1678824024102" duration="4534000" />
-      <workItem from="1678870565589" duration="7239000" />
+      <workItem from="1678870565589" duration="8210000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>
@@ -107,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678875331976</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add HTML page">
+      <created>1678879050808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678879050808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Frontend" />
+    <MESSAGE value="Add HTML page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add HTML page" />
   </component>
 </project>
