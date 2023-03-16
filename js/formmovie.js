@@ -7,21 +7,35 @@ function createFormEventListener(){
 }
 
 async function handleFormSubmit(event) {
-    //Vi handler submit her, i stedet for default html behaviour
     event.preventDefault();
-    const form = event.currentTarget;
-    const url = form.action;
-    console.log(form)
-    console.log(url)
-    console.log(form === formMovie)
-    try {
-        const formData = new FormData(form)
-        console.log(formData)
-        //const responseData = await postFormData(url, formData)
-    } catch (error) {
-        alert(error.message)
-        console.log(error)
+    const URL = formMovie.action;
+    let title = document.getElementById("inpTitle").value;
+    let genre = document.getElementById("inpGenre").value;
+    let length = document.getElementById("inpLength").value;
+    let rating = document.getElementById("inpRating").value;
+    let ageRestriction = document.getElementById("inpAgeRestriction").value;
+
+    const movie = {
+    title: title,
+    genre: genre,
+    length: length,
+    rating: rating,
+    ageRestriction: ageRestriction
+    };
+
+    const options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(movie)
+    };
+    const response = await fetch(URL, options);
+    if (!response.ok) {
+        const errorMessage = await response.text();
+        throw new Error(errorMessage);
     }
+
 }
 
 /*

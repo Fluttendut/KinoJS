@@ -22,16 +22,11 @@ function createTable(movie) {
     cell = row.insertCell(cellCount++)
     cell.innerHTML = movie.ageRestriction
 
-    //Update knap, sender movie til PUT
-    cell = row.insertCell(cellCount++)
-    let pbUpdate = document.getElementById("submitAddMovie")
-    pbUpdate.addEventListener('click',
-        function () {updateMovie(movie)})
-    cell.appendChild(pbUpdate)
-
     //Delete knap, sender movie til DELETE
     cell = row.insertCell(cellCount++)
-    let pbDelete = document.createElement("buttonDelete") //TODO refer to delete button when created
+    let pbDelete = document.createElement("button")
+    pbDelete.textContent = "Delete"
+    pbDelete.className = "buttondelete"
     pbDelete.addEventListener('click', function () {
         const rowdel = document.getElementById(movie.title)
         rowdel.remove();
