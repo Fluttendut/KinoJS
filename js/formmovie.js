@@ -7,20 +7,21 @@ function createFormEventListener(){
 }
 
 async function handleFormSubmit(event) {
+    console.log("nu er vi i submit")
     event.preventDefault();
     const URL = formMovie.action;
     let title = document.getElementById("inpTitle").value;
     let genre = document.getElementById("inpGenre").value;
     let length = document.getElementById("inpLength").value;
     let rating = document.getElementById("inpRating").value;
-    let ageRestriction = document.getElementById("inpAgeRestriction").value;
+    //let ageRestriction = document.getElementById("inpAgeRestriction").value;
 
     const movie = {
     title: title,
     genre: genre,
     length: length,
-    rating: rating,
-    ageRestriction: ageRestriction
+    rating: rating
+    //ageRestriction: ageRestriction
     };
 
     const options = {
@@ -31,6 +32,7 @@ async function handleFormSubmit(event) {
         body: JSON.stringify(movie)
     };
     const response = await fetch(URL, options);
+    console.log(response);
     if (!response.ok) {
         const errorMessage = await response.text();
         throw new Error(errorMessage);
