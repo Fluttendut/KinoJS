@@ -14,14 +14,14 @@ async function handleFormSubmit(event) {
     let genre = document.getElementById("inpGenre").value;
     let length = document.getElementById("inpLength").value;
     let rating = document.getElementById("inpRating").value;
-    //let ageRestriction = document.getElementById("inpAgeRestriction").value;
+    let ageRestriction = document.getElementById("inpAgeRestriction").value;
 
     const movie = {
     title: title,
     genre: genre,
     length: length,
-    rating: rating
-    //ageRestriction: ageRestriction
+    rating: rating,
+    ageRestriction: ageRestriction
     };
 
     const options = {
