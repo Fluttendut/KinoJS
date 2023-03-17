@@ -43,9 +43,16 @@ function createTable(movie) {
     pbUpdate.textContent = "Edit"
     pbUpdate.className = "buttonupdate"
     pbUpdate.addEventListener('click', function () {
-        console.log("hej")
     })
     cell.appendChild(pbUpdate)
+
+    cell = row.insertCell(cellCount++)
+    let pbDelete = document.createElement("button")
+    pbDelete.textContent = "Delete"
+    pbDelete.className = "buttondelete"
+    pbDelete.addEventListener('click', function () {
+    })
+    cell.appendChild(pbDelete)
 }
 
 actionFetchMovies()
