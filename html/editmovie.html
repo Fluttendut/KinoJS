@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Add Movie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesheetaddmovie.css">
+</head>
+<body>
+<div class="card" style="width: 16rem;">
+
+    <div class="card-body" onloadstart="getAllUrlParams()">
+
+        <form action="http://localhost:8080/editMovie" method="post" id="formMovie">
+        <div id="cardText">
+        <p>Edit movie</p>
+        </div>
+        <label for="inpTitle">Title</label><br>
+        <input type="text" required name="title" placeholder="Enter title" id="inpTitle"><br>
+
+        <label for="inpGenre">Genre</label><br>
+        <input type="text" required name="genre" placeholder="Enter genre" id="inpGenre"><br>
+
+        <label for="inpLength">Length</label><br>
+        <input type="text" required name="length" placeholder="Enter length" id="inpLength"><br>
+
+        <label for="inpRating">Rating</label><br>
+        <input type="text" required name="rating" placeholder="Enter rating" id="inpRating"><br>
+
+        <label for="inpAgeRestriction">Age Restriction</label><br>
+        <input type="text" required name="ageRestriction" placeholder="Enter age restriction" id="inpAgeRestriction"><br>
+        <br>
+
+
+        <a href="moviemanager.html"class="btn gradient-neon" >Cancel</a>
+        <button type="submit"
+                class="btn gradient-neon"
+                id="submitAddMovie"
+                onclick=window.location.href="moviemanager.html"
+                >Update</button>
+
+        </form>
+    </div>
+
+</div>
+<script src="../js/formmovie.js"> </script>
+
+<script>
+    function getAllUrlParams(url) {
+
+        // get query string from url (optional) or window
+        var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+
+        // we'll store the parameters here
+        var obj = {};
+
+        // if query string exists
+        if (queryString) {
+
+            // stuff after # is not part of query string, so get rid of it
+            queryString = queryString.split('#')[0];
+
+            // split our query string into its component parts
+            var arr = queryString.split('&');
+
+            for (var i = 0; i < arr.length; i++) {
+                // separate the keys and the values
+                var a = arr[i].split('=');
+
+                // set parameter name and value (use 'true' if empty)
+                var paramName = a[0];
+                var paramValue = typeof (a[1]) === 'undefined' ? true : a[1];
+
+                // if the paramName ends with square brackets, e.g. colors[] or colors[2]
+                if (paramName.match(/[(\d+)?]$/)) {
+
+                    // create key if it doesn't exist
+                    var key = paramName.replace(/[(\d+)?]/, '');
+                    if (!obj[key]) obj[key] = [];
+
+                    // if it's an indexed array e.g. colors[2]
+                    if (paramName.match(/[\d+]$/)) {
+                        // get the index value and add the entry at the appropriate position
+                        var index = /[(\d+)]/.exec(paramName)[1];
+                        obj[key][index] = paramValue;
+                    } else {
+                        // otherwise add the value to the end of the array
+                        obj[key].push(paramValue);
+                    }
+                } else {
+                    // we're dealing with a string
+                    if (!obj[paramName]) {
+                        // if it doesn't exist, create property
+                        obj[paramName] = paramValue;
+                    } else if (obj[paramName] && typeof obj[paramName] === 'string'){
+                        // if property does exist and it's a string, convert it to an array
+                        obj[paramName] = [obj[paramName]];
+                        obj[paramName].push(paramValue);
+                    } else {
+                        // otherwise add the property
+                        obj[paramName].push(paramValue);
+                    }
+                }
+            }
+        }
+
+        return obj;
+
+    }
+    document.getElementById("inpTitle").value = getAllUrlParams().title;
+    document.getElementById("inpGenre").value = getAllUrlParams().genre;
+    document.getElementById("inpLength").value = getAllUrlParams().length;
+    document.getElementById("inpRating").value = getAllUrlParams().rating;
+    document.getElementById("inpAgeRestriction").value = getAllUrlParams().ageRestriction;
+</script>
+
+
+</body>
+</body>
+</html>

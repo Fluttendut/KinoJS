@@ -70,4 +70,3 @@ function actionCreateTable() {
 }
 
 pbCreateTable.addEventListener('load', actionCreateTable)
-

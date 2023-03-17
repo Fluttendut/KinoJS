@@ -45,6 +45,8 @@ function createTable(movie) {
     pbUpdate.textContent = "Edit"
     pbUpdate.className = "buttonupdate"
     pbUpdate.addEventListener('click', function () {
+        //window.location.href = "editmovie.html"
+        window.location.href=`editmovie.html?title=${movie.title}&genre=${movie.genre}&length=${movie.length}&rating=${movie.rating}&ageRestriction=${movie.ageRestriction}`
     })
     cell.appendChild(pbUpdate)
 
@@ -54,8 +56,30 @@ function createTable(movie) {
     pbDelete.textContent = "Delete"
     pbDelete.className = "buttondelete"
     pbDelete.addEventListener('click', function () {
+        const rowdel = document.getElementById(movie.title)
+        rowdel.remove();
+        restDeleteMovie(movie)
     })
     cell.appendChild(pbDelete)
+
+}
+async function restDeleteMovie(movie) {
+    const url = "http://localhost:8080/deleteMovie/" + movie.title;
+    const fetchOptions = {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: ""
+    }
+    fetchOptions.body = JSON.stringify(movie);
+    //calls backend and wait for return
+    const response = await fetch(url, fetchOptions);
+    console.log(response);
+    if (!response.ok) {
+        console.log("Delete failed");
+    }
+    return response;
 }
 
 actionFetchMovies()
