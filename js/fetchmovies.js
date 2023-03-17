@@ -1,5 +1,7 @@
 const urlMovies = "http://localhost:8080/movies"
 
+
+
 function fetchAny(url) {
     console.log(url)
     return fetch(url).then((response) => response.json())
@@ -37,7 +39,7 @@ function createTable(movie) {
     cell = row.insertCell(cellCount++)
     cell.innerHTML = movie.ageRestriction
 
-
+    //Edit movie
     cell = row.insertCell(cellCount++)
     let pbUpdate = document.createElement("button")
     pbUpdate.textContent = "Edit"
@@ -46,6 +48,7 @@ function createTable(movie) {
     })
     cell.appendChild(pbUpdate)
 
+    //Delete movie
     cell = row.insertCell(cellCount++)
     let pbDelete = document.createElement("button")
     pbDelete.textContent = "Delete"
