@@ -25,9 +25,13 @@
 </div>
 <div class="flex-content" style="height: 16px">
     <br><br>
-    <div class="alert alert-primary" role="alert" th:if="${message!=null}">
-        <p th:text="${message}"></p>
+    <div>
+
     </div>
+    <!--TODO: alert der bruger thymeleaf, bør laves om til i stedet at eksekvere et javascript-->
+<!--    <div class="alert alert-primary" role="alert" th:if="${message!=null}">
+        <p th:text="${message}"></p>
+    </div>-->
 </div>
 <main class="form-signin w-100 m-auto card">
     <form id="formUser" action="http://localhost:8080/api/v1/auth/authenticate" method="post">

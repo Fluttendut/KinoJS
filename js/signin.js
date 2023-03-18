@@ -17,17 +17,7 @@ async function handleFormSubmit(event) {
         username: username,
         password: password,
     };
-
     console.log(user)
-
-/*
-    $.ajax({
-        type: 'POST',
-        data: user,
-        contentType: 'application/json',
-        url: formUser.action
-    });
-*/
 
     const options = {
         method: "post",
@@ -36,11 +26,18 @@ async function handleFormSubmit(event) {
         },
         body: JSON.stringify(user)
     };
-    const response = await fetch(URL, options);
-    console.log(response.text());
-    if (!response.ok) {
-        const errorMessage = await response.text();
-        throw new Error(errorMessage);
-    }
+
+    await fetch(URL, options)
+        .then((res) => {
+            if (res.status === 200) {
+                return res.json()
+            } else {
+                throw Error(res.statusText)
+            }
+        })
+        .then(data => {
+            localStorage.setItem("token", data.token)
+        })
+        .catch(console.error);
 
 }
