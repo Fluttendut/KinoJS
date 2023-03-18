@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charSet="utf-8" class="next-head"/>
+    <title class="next-head">Medarbejder Log ind | Kino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon"
+          href="https://cdn-icons-png.flaticon.com/128/3946/3946005.png"
+          class="next-head"/>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/signin.css" rel="stylesheet">
+    <link href="/css/buttons.css" rel="stylesheet">
+
+</head>
+<body id="bg-login" class="text-center flex-box" style="flex-direction: column">
+<div class="flex-content">
+    <!--TODO:gammelt billede fra tidligere projekt-->
+    <!--    <img
+                src="https://res.cloudinary.com/digital-interdan-bilabonnement/image/upload/c_fit,q_80,w_128/v1/Logos/logo_brands_0922_ltj2wu.svg"
+                alt="" width="622" height="78">-->
+</div>
+<div class="flex-content" style="height: 16px">
+    <br><br>
+    <div class="alert alert-primary" role="alert" th:if="${message!=null}">
+        <p th:text="${message}"></p>
+    </div>
+</div>
+<main class="form-signin w-100 m-auto card">
+    <form id="formUser" action="http://localhost:8080/api/v1/auth/authenticate" method="post">
+
+        <div class="flex-content">
+
+            <h1 class="h3 mb-3 fw-normal kino-header">Medarbejder Log ind</h1>
+
+            <div class="form-floating">
+                <input name="username" type="text" class="form-control" id="floatingInput"
+                       placeholder="navn@eksempel.dk" pattern="[^ @]*@[^ @]*"
+                       oninvalid="this.setCustomValidity('Invalid email: @ or . is missing')">
+                <label for="floatingInput">Brugernavn</label>
+            </div>
+            <div class="form-floating">
+                <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Kodeord">
+                <label for="floatingPassword">Kodeord</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Log ind</button>
+        </div>
+    </form>
+</main>
+<!--TODO: kino-footer virker ikke-->
+<p class="mt-5 mb-3 text-muted kino-footer">&copy;Kino Zippy anno 2023</p>
+</body>
+
+<script src="/js/signin.js"></script>
+</html>

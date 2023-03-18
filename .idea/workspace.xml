@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="buttoonnnsss">
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; -moved all .html, .css, .js files related to signin from KinoZippy project to this one&#10; -added cinema icon to signin page">
+      <change afterPath="$PROJECT_DIR$/css/buttons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/signin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/signin_with_security.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/signin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheetfrontpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetfrontpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/frontpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/moviemanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moviemanager.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,35 +39,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Dokumenter/Java 2022/KinoJS/css",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/IdeaProjects/2023F/Uge11/KinoJS&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dokumenter\Java 2022\KinoJS\css" />
       <recent name="D:\Dokumenter\Java 2022\KinoJS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\IdeaProjects\2023F\Uge11\KinoJS\js" />
+      <recent name="C:\IdeaProjects\2023F\Uge11\KinoJS\css" />
+      <recent name="C:\IdeaProjects\2023F\Uge11\KinoJS\html" />
       <recent name="D:\Dokumenter\Java 2022\KinoJS\html" />
       <recent name="D:\Dokumenter\Java 2022\KinoJS\js" />
     </key>
@@ -84,6 +89,8 @@
       <workItem from="1678870565589" duration="16235000" />
       <workItem from="1679043711222" duration="8000" />
       <workItem from="1679043744402" duration="11063000" />
+      <workItem from="1679130039111" duration="353000" />
+      <workItem from="1679131044128" duration="964000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>
@@ -193,6 +200,7 @@
     <MESSAGE value="HTML page donedone" />
     <MESSAGE value="HTML page donedoneDONE" />
     <MESSAGE value="buttoonnnsss" />
-    <option name="LAST_COMMIT_MESSAGE" value="buttoonnnsss" />
+    <MESSAGE value="CHANGES:&#10; -moved all .html, .css, .js files related to signin from KinoZippy project to this one&#10; -added cinema icon to signin page" />
+    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; -moved all .html, .css, .js files related to signin from KinoZippy project to this one&#10; -added cinema icon to signin page" />
   </component>
 </project>
