@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; -moved all .html, .css, .js files related to signin from KinoZippy project to this one&#10; -added cinema icon to signin page">
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; -authentication token is now stored locally">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KinoJS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KinoJS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/addmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/addmovie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/editmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/editmovie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/moviemanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moviemanager.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/signin_with_security.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signin_with_security.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/fetchmovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fetchmovies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/formmovie.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/formmovie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/signin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +26,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -36,29 +44,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/IdeaProjects/2023F/Uge11/KinoJS&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/IdeaProjects/2022E/Uge47/EksamensprojektE22",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dokumenter\Java 2022\KinoJS\css" />
@@ -87,7 +95,11 @@
       <workItem from="1679043711222" duration="8000" />
       <workItem from="1679043744402" duration="11063000" />
       <workItem from="1679130039111" duration="353000" />
-      <workItem from="1679131044128" duration="3110000" />
+      <workItem from="1679131044128" duration="3167000" />
+      <workItem from="1679146614863" duration="11820000" />
+      <workItem from="1679170687064" duration="9359000" />
+      <workItem from="1679212009626" duration="8625000" />
+      <workItem from="1679230414277" duration="11050000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>
@@ -180,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679132033629</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="CHANGES:&#10; -authentication token is now stored locally">
+      <created>1679134500511</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679134500511</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +224,7 @@
     <MESSAGE value="HTML page donedoneDONE" />
     <MESSAGE value="buttoonnnsss" />
     <MESSAGE value="CHANGES:&#10; -moved all .html, .css, .js files related to signin from KinoZippy project to this one&#10; -added cinema icon to signin page" />
-    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; -moved all .html, .css, .js files related to signin from KinoZippy project to this one&#10; -added cinema icon to signin page" />
+    <MESSAGE value="CHANGES:&#10; -authentication token is now stored locally" />
+    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; -authentication token is now stored locally" />
   </component>
 </project>

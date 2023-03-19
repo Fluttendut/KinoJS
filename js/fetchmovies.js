@@ -1,10 +1,18 @@
 const urlMovies = "http://localhost:8080/movies"
 
-
-
 function fetchAny(url) {
     console.log(url)
-    return fetch(url).then((response) => response.json())
+    let options =  {
+        method: 'get',
+        headers: {
+            'Authorization': 'Bearer ' + sessionStorage.getItem('token')
+        },
+        mode: 'cors'
+    };
+    console.log(options)
+    return fetch(url, options)
+        .then((response) => response.json())
+        .then(json => console.log(JSON.stringify(json)))
 }
 
 let lstMovies = []
@@ -68,6 +76,7 @@ async function restDeleteMovie(movie) {
     const fetchOptions = {
         method: "DELETE",
         headers: {
+            'Authorization': 'Bearer ' + sessionStorage.getItem('token'),
             "Content-type": "application/json"
         },
         body: ""
@@ -82,4 +91,3 @@ async function restDeleteMovie(movie) {
     return response;
 }
 
-actionFetchMovies()

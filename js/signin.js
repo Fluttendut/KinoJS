@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', createFormEventListener);
-let formUser;
+let formSignin;
 function createFormEventListener(){
-    formUser = document.getElementById("formUser");
-    formUser.addEventListener("submit", handleFormSubmit);
+    formSignin = document.getElementById("formSignin");
+    formSignin.addEventListener("submit", handleFormSubmit);
 }
 
 async function handleFormSubmit(event) {
     console.log("nu er vi i submit")
     event.preventDefault();
-    const URL = formUser.action;
+    const URL = formSignin.action;
     let username = document.getElementById("floatingInput").value;
     let password = document.getElementById("floatingPassword").value;
     console.log(URL,username,password)
@@ -22,7 +22,7 @@ async function handleFormSubmit(event) {
     const options = {
         method: "post",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
         },
         body: JSON.stringify(user)
     };
@@ -36,8 +36,8 @@ async function handleFormSubmit(event) {
             }
         })
         .then(data => {
-            localStorage.setItem("token", data.token)
+            sessionStorage.setItem("token", data.token)
+            location.href = '../html/moviemanager.html';
         })
         .catch(console.error);
-
 }

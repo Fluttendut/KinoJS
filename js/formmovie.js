@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', createFormEventListener);
 let formMovie;
 
-function createFormEventListener(){
+function createFormEventListener() {
     formMovie = document.getElementById("formMovie");
     formMovie.addEventListener("submit", handleFormSubmit);
 }
@@ -17,27 +17,32 @@ async function handleFormSubmit(event) {
     let ageRestriction = document.getElementById("inpAgeRestriction").value;
 
     const movie = {
-    title: title,
-    genre: genre,
-    length: length,
-    rating: rating,
-    ageRestriction: ageRestriction
+        title: title,
+        genre: genre,
+        length: length,
+        rating: rating,
+        ageRestriction: ageRestriction
     };
 
     const options = {
-        method: "POST",
+        method: "post",
         headers: {
-            "Content-Type": "application/json"
-        },
+            'Authorization': 'Bearer ' + sessionStorage.getItem('token'),
+            "Content-Type": "application/json"},
+        mode: 'cors',
         body: JSON.stringify(movie)
     };
-    const response = await fetch(URL, options);
-    console.log(response);
-    if (!response.ok) {
-        const errorMessage = await response.text();
-        throw new Error(errorMessage);
-    }
-
+    await fetch(URL, options)
+        .then((res) => {
+            if (res.status === 200) {
+                console.log(res)
+                location.href = '../html/moviemanager.html';
+                return res.json()
+            } else {
+                throw Error(res.statusText)
+            }
+        })
+        .catch(console.error);
 }
 
 /*
