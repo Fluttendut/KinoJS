@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - added working authentication request headers to most fetch methods">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - something works, but not all....">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/addmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/addmovie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/editmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/editmovie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/moviemanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moviemanager.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/fetchmovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fetchmovies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/signin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
