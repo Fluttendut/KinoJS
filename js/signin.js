@@ -39,5 +39,4 @@ async function handleFormSubmit(event) {
             sessionStorage.setItem("token", data.token)
             location.href = '../html/moviemanager.html';
         })
-        .catch(console.error);
 }

@@ -1,31 +1,50 @@
-const urlMovies = "http://localhost:8080/movies"
+const urlMovies = "http://localhost:8080/api/v1/movies"
 
-function fetchAny(url) {
+async function fetchAny(url) {
     console.log(url)
-    let options =  {
+    let options = {
         method: 'get',
+        dataType: 'json',
         headers: {
-            'Authorization': 'Bearer ' + sessionStorage.getItem('token')
+           /* 'Authorization': 'Bearer ' + sessionStorage.getItem('token'),*/
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
         },
         mode: 'cors'
     };
     console.log(options)
-    return fetch(url, options)
-        .then((response) => response.json())
-        .then(json => console.log(JSON.stringify(json)))
+    return await fetch(url, options)
+        .then((response) => {
+            console.log(response.status)
+            if (response.status === 200) {
+                return response.json();
+            } else {
+                throw Error(response.statusText)
+            }
+        })
+        /*.then(json => console.log(JSON.stringify(json)));*/
 }
 
-let lstMovies = []
+
+
 async function actionFetchMovies() {
-    lstMovies = await fetchAny(urlMovies);
-    lstMovies.forEach(showMovie)
+    let lstMovies = await Promise.resolve(fetchAny(urlMovies))
+    console.log(lstMovies)
+    for (let i = 0; i < lstMovies.length; i++) {
+        console.log(i)
+        showMovie(i)
+    }
 }
+
 function showMovie(movie) {
-    console.log(movie)
+/*
+    console.log("show movie" + movie)
+*/
     createTable(movie)
 }
 
 const tblMovie = document.getElementById("tblMovies");
+
 function createTable(movie) {
     console.log(movie.title)
     if (!movie.title) return;
@@ -54,7 +73,7 @@ function createTable(movie) {
     pbUpdate.className = "buttonupdate"
     pbUpdate.addEventListener('click', function () {
         //window.location.href = "editmovie.html"
-        window.location.href=`editmovie.html?title=${movie.title}&genre=${movie.genre}&length=${movie.length}&rating=${movie.rating}&ageRestriction=${movie.ageRestriction}`
+        window.location.href = `editmovie.html?title=${movie.title}&genre=${movie.genre}&length=${movie.length}&rating=${movie.rating}&ageRestriction=${movie.ageRestriction}`
     })
     cell.appendChild(pbUpdate)
 
@@ -71,8 +90,9 @@ function createTable(movie) {
     cell.appendChild(pbDelete)
 
 }
+
 async function restDeleteMovie(movie) {
-    const url = "http://localhost:8080/deleteMovie/" + movie.title;
+    const url = "http://localhost:8080/api/v1/deleteMovie/" + movie.title;
     const fetchOptions = {
         method: "DELETE",
         headers: {
@@ -90,4 +110,6 @@ async function restDeleteMovie(movie) {
     }
     return response;
 }
+
+actionFetchMovies();
 
