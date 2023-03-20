@@ -54,7 +54,7 @@ function createTable(movie) {
     pbUpdate.className = "buttonupdate"
     pbUpdate.addEventListener('click', function () {
         //window.location.href = "editmovie.html"
-        window.location.href=`editmovie.html?title=${movie.title}&genre=${movie.genre}&length=${movie.length}&rating=${movie.rating}&ageRestriction=${movie.ageRestriction}&id=${movie.id}`
+        window.location.href=`editmovie.html?title=${movie.title}&genre=${movie.genre}&length=${movie.length}&rating=${movie.rating}&ageRestriction=${movie.ageRestriction}&movieId=${movie.movieId}`
     })
     cell.appendChild(pbUpdate)
 
