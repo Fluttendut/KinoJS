@@ -23,11 +23,11 @@ async function handleAddFormSubmit(event) {
 
 
     const movie = {
-        title: title,
-        genre: genre,
-        length: length,
-        rating: rating,
-        ageRestriction: ageRestriction,
+        title: title.trim(),
+        genre: genre.trim(),
+        length: length.trim(),
+        rating: rating.trim(),
+        ageRestriction: ageRestriction.trim(),
     };
 
     const options = {
@@ -52,7 +52,7 @@ async function handleAddFormSubmit(event) {
 }
 
 async function handleEditFormSubmit(event) {
-    console.log("nu er vi i add submit")
+    console.log("nu er vi i edit submit")
     event.preventDefault();
     const URL = formMovie.action;
     let title = document.getElementById("inpTitle").value;

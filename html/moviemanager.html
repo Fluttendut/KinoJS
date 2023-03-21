@@ -35,15 +35,36 @@
     </div>
 
     <div class="card-body">
-        <input type="text" required name="search" placeholder="Search" id="inpSearch">
-        <button type="submit" class="btn btn-primary">Search</button>
-        <a href="addmovie.html" class="btn btn-primary">Add new movie</a>
+        <input type="text" required name="search" onkeyup="searchFunction()" placeholder="Search" id="inpSearch">
+
+        <a href="addmovie.html" class="btn btn-primary" id="addNewButton">Add new movie</a>
     </div>
 </div>
 <script src="../js/fetchmovies.js"></script>
-<!--<script>
-    $(document).ready(actionFetchMovies());
-</script>-->
+
+<script>
+    function searchFunction() {
+        // Declare variables
+        var input, filter, table, tr, th, i, txtValue;
+        input = document.getElementById("inpSearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("tblMovies");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            th = tr[i].getElementsByTagName("td")[0];
+            if (th) {
+                txtValue = th.textContent || th.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
 
 </body>
 
