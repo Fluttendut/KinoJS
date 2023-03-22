@@ -54,7 +54,7 @@ async function searchMovie(searchParam) {
 async function fetchIMDB() {
     console.log("vi er nu i fetchIMDB")
     event.preventDefault();
-    let searchParam = document.getElementById("inpSearch").value;
+    let searchParam = document.getElementById("inpSearchIMDB").value;
     let lastSearch;
     if (localStorage.getItem("lastSearch") !== null) {
         lastSearch = localStorage.getItem("lastSearch")
