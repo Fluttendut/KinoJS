@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - working imdb search function (just for fun)">
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - changed id for search input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/imdb_api_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/imdb_api_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/moviemanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moviemanager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/imdb_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/imdb_api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +95,8 @@
       <workItem from="1679319211612" duration="121000" />
       <workItem from="1679394266541" duration="1932000" />
       <workItem from="1679409843711" duration="18988000" />
-      <workItem from="1679472519050" duration="234000" />
+      <workItem from="1679472519050" duration="2409000" />
+      <workItem from="1679481763000" duration="1012000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679434599873</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="CHANGES:&#10; - changed id for search input">
+      <created>1679472773584</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679472773584</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +253,7 @@
     <MESSAGE value="CHANGES:&#10; - added working authentication request headers to most fetch methods" />
     <MESSAGE value="CHANGES:&#10; - everything seems to work" />
     <MESSAGE value="CHANGES:&#10; - working imdb search function (just for fun)" />
-    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - working imdb search function (just for fun)" />
+    <MESSAGE value="CHANGES:&#10; - changed id for search input" />
+    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - changed id for search input" />
   </component>
 </project>
