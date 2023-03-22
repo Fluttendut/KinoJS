@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>IMDB Top 250</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylesheetmoviemanager.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+            crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+
+<div class="card" style="width: 40rem;">
+<!--    <button id="findMovie" class="btn btn-primary" onclick="fetchIMDB()">
+        Hent IMDB top 250 movies fra api
+    </button>-->
+    <div class="scroll">
+        <div>
+            <table class="table" id="tblMoviesIMDB">
+                <tr style="color:white; background-color: black">
+                    <th>Title</th>
+                    <!--<th>Image</th>-->
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="/js/imdb_api.js"></script>
+<script>
+    $( document ).ready(createTableFromSession());
+</script>
+</body>
+</html>

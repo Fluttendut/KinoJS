@@ -36,11 +36,22 @@
 
     <div class="card-body">
         <input type="text" required name="search" onkeyup="searchFunction()" placeholder="Search" id="inpSearch">
-
-        <a href="addmovie.html" class="btn btn-primary" id="addNewButton">Add new movie</a>
+    </div>
+    <div class="card-body">
+        <form id="formSearchIMDB">
+            <label for="inpSearchIMDB"></label><input type="text" required name="search" placeholder="Search"
+                                                      id="inpSearchIMDB">
+            <button type="submit" class="btn btn-primary">Search IMDB</button>
+            <a href="addmovie.html" class="btn btn-primary" id="addNewButton">Add new movie</a>
+        </form>
     </div>
 </div>
 <script src="../js/fetchmovies.js"></script>
+<script src="../js/imdb_api.js"></script>
+
+<!--<script>
+    $(document).ready(actionFetchMovies());
+</script>-->
 
 <script>
     function searchFunction() {
