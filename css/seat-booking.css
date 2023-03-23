@@ -5,6 +5,16 @@
 }
 
 body {
+    background-image: url("https://e0.pxfuel.com/wallpapers/182/698/desktop-wallpaper-classic-movie-classic-movie-poster.jpg");
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
     background-color: #1c273a; /*#242333;*/
     display: flex;
     flex-direction: column;

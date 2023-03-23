@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - added browser tab icons to all htmls">
-      <change afterPath="$PROJECT_DIR$/css/seat-booking.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/seat-booking.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/seat-booking.js" afterDir="false" />
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - added interactive seat booking without any working functions to store choices yet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/imdb_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/imdb_api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/seat-booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/seat-booking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheetmoviemanager.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetmoviemanager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/imdb_api_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/imdb_api_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/moviemanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moviemanager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/seat-booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/seat-booking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/signin_with_security.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signin_with_security.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/signin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +25,8 @@
       <list>
         <option value="package.json" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -46,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/IdeaProjects/2022E/Uge47/EksamensprojektE22",
+    "last_opened_file_path": "C:/IdeaProjects/2023F/Uge11/KinoZippy",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

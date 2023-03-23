@@ -8,7 +8,7 @@ function createFormEventListener(){
 async function handleFormSubmit(event) {
     console.log("nu er vi i submit")
     event.preventDefault();
-    const URL = formSignin.action;
+    const URL = "http://localhost:8080/api/v1/auth/authenticate"
     let username = document.getElementById("floatingInput").value;
     let password = document.getElementById("floatingPassword").value;
     console.log(URL,username,password)
