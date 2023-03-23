@@ -23,6 +23,9 @@ body {
 input {
     width: 212px;
 }
+select {
+    width: 212px;
+}
 
 label {
     font-weight: bold;
