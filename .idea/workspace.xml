@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - changed id for search input">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_2023_13_19__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_03_2023_13_19__Changes_.xml" afterDir="false" />
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="fixed calendar ish">
+      <change afterPath="$PROJECT_DIR$/css/337403788_1277837523146213_3064957193608786384_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/Screenshot 2023-03-23 134100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/Screenshot 2023-03-23 135035.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheetcalendarmanager.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetcalendarmanager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/calendarmanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/calendarmanager.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,45 +39,48 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2N0lB0S1pNnPCNuUiYHQ5u1yRS8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/IdeaProjects/2023F/Uge11/KinoJS&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/IdeaProjects/2023F/Uge11/KinoJS",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dokumenter\Java 2022\KinoJS\css" />
       <recent name="D:\Dokumenter\Java 2022\KinoJS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dokumenter\Java 2022\KinoJS\css" />
+      <recent name="D:\Dokumenter\Java 2022\KinoJS\.idea\images" />
       <recent name="C:\IdeaProjects\2023F\Uge11\KinoJS\js" />
       <recent name="C:\IdeaProjects\2023F\Uge11\KinoJS\css" />
       <recent name="C:\IdeaProjects\2023F\Uge11\KinoJS\html" />
-      <recent name="D:\Dokumenter\Java 2022\KinoJS\html" />
-      <recent name="D:\Dokumenter\Java 2022\KinoJS\js" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -230,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679472773584</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fixed calendar ish">
+      <created>1679572791123</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679572791123</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +261,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Frontend" />
     <MESSAGE value="Add HTML page" />
     <MESSAGE value="HTML page done" />
@@ -260,6 +274,7 @@
     <MESSAGE value="CHANGES:&#10; - everything seems to work" />
     <MESSAGE value="CHANGES:&#10; - working imdb search function (just for fun)" />
     <MESSAGE value="CHANGES:&#10; - changed id for search input" />
-    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - changed id for search input" />
+    <MESSAGE value="fixed calendar ish" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed calendar ish" />
   </component>
 </project>

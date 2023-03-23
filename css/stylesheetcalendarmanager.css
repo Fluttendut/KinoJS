@@ -1,4 +1,5 @@
 body {
+
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
@@ -28,7 +29,8 @@ h3,h4,h5 {
 }
 
 .header-background {
-    background-image: url("https://raw.githubusercontent.com/JustMonk/codepen-resource-project/master/img/compressed-header.jpg");
+    background-image: url("https://thumbs.gfycat.com/AlarmingRaggedChick-size_restricted.gif");
+    background-repeat: repeat-x;
     height: 200px;
     background-position: center right;
     background-size: cover;
@@ -67,7 +69,7 @@ h3,h4,h5 {
     top: 100%;
     width: 100%;
     height: 100%;
-    background-color: #4b5889 !important;
+    background-color: black !important;
     transition: top 0.5s cubic-bezier(1, 0, 0, 1);
     padding: 0 5px 0 5px;
 }
@@ -110,7 +112,7 @@ h3,h4,h5 {
 
 .sidebar-wrapper {
     color: #fff;
-    background-color: #5a649c !important;
+    background-color: black !important;
     padding-top: 0;
     padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
