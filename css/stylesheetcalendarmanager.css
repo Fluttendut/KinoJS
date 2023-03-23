@@ -176,13 +176,13 @@ h3,h4,h5 {
 }
 
 .day-mark {
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     background-color: #b39ddb;
     border-radius: 100px;
     position: absolute;
-    left: 47%;
-    top: 67%;
+    left: calc(50% - 4px);
+    top: 68%;
 }
 
 .content-wrapper {
@@ -203,7 +203,13 @@ h3,h4,h5 {
 }
 
 #table-body .row .col {
+
     padding: .75rem;
+}
+
+div.col.empty-day, .col{
+    width: 14.2%;
+    position: relative;
 }
 
 #table-body .col {
