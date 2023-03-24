@@ -37,6 +37,6 @@ async function handleFormSubmit(event) {
         })
         .then(data => {
             sessionStorage.setItem("token", data.token)
-            location.href = '../html/moviemanager.html';
+            location.href = '../html/frontpage.html';
         })
 }

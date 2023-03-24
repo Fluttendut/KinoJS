@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - added interactive seat booking without any working functions to store choices yet">
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - minor fixes and tweaks">
+      <change afterPath="$PROJECT_DIR$/js/dropdown_booking.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/buttons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/seat-booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/seat-booking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesheetfrontpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetfrontpage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesheetmoviemanager.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetmoviemanager.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/imdb_api_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/imdb_api_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/frontpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/moviemanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moviemanager.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/seat-booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/seat-booking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/signin_with_security.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/signin_with_security.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/fetchmovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fetchmovies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/seat-booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/seat-booking.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/signin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +26,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/IdeaProjects/2023F/Uge11/KinoZippy",
+    "last_opened_file_path": "C:/IdeaProjects/2022E/Uge47/EksamensprojektE22",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -105,6 +107,9 @@
       <workItem from="1679472519050" duration="2409000" />
       <workItem from="1679481763000" duration="3831000" />
       <workItem from="1679504652043" duration="12977000" />
+      <workItem from="1679607915729" duration="794000" />
+      <workItem from="1679619242408" duration="4007000" />
+      <workItem from="1679626392776" duration="6021000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>
@@ -246,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679483422660</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="CHANGES:&#10; - minor fixes and tweaks">
+      <created>1679607952892</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679607952892</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +290,7 @@
     <MESSAGE value="CHANGES:&#10; - changed id for search input" />
     <MESSAGE value="CHANGES:&#10; - moved add movie button in moviemanager.html" />
     <MESSAGE value="CHANGES:&#10; - added browser tab icons to all htmls" />
-    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - added browser tab icons to all htmls" />
+    <MESSAGE value="CHANGES:&#10; - minor fixes and tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - minor fixes and tweaks" />
   </component>
 </project>

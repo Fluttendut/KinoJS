@@ -12,7 +12,7 @@ body {
 
 div.scroll {
     text-align: center;
-    width: 600px;
+/*    width: 600px;*/
     border-bottom-color: black;
     height: 270px;
     overflow-x: hidden;
