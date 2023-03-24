@@ -62,7 +62,7 @@ function createTable(movie) {
     cell = row.insertCell(cellCount++)
     let pbUpdate = document.createElement("button")
     pbUpdate.textContent = "Edit"
-    pbUpdate.className = "buttonupdate"
+    pbUpdate.className = "btn btn-primary" /*buttonupdate*/
     pbUpdate.addEventListener('click', function () {
         //window.location.href = "editmovie.html"
         window.location.href = `editmovie.html?title=${movie.title}&genre=${movie.genre}&length=${movie.length}&rating=${movie.rating}&ageRestriction=${movie.ageRestriction}&movieId=${movie.movieId}`
@@ -73,7 +73,7 @@ function createTable(movie) {
     cell = row.insertCell(cellCount++)
     let pbDelete = document.createElement("button")
     pbDelete.textContent = "Delete"
-    pbDelete.className = "buttondelete"
+    pbDelete.className = "btn btn-primary" /*buttondelete*/
     pbDelete.addEventListener('click', function () {
         const rowdel = document.getElementById(movie.title)
         rowdel.remove();

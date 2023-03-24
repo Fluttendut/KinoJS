@@ -1,25 +1,29 @@
 .card {
     overflow-scrolling: auto;
-    margin: 0 auto;
     float: none;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
+    border: none;
 }
+
 body {
     padding-top: 12%;
     background-image: url("https://e0.pxfuel.com/wallpapers/182/698/desktop-wallpaper-classic-movie-classic-movie-poster.jpg");
 }
 
 div.scroll {
-    /*text-align: center;*/
-    /*width: 600px;*/
-    /*border-bottom-color: black;*/
+    text-align: center;
+/*    width: 600px;*/
+    border-bottom-color: black;
     height: 270px;
     overflow-x: hidden;
     overflow-y: auto;
     padding: 20px;
 }
 
-.card-body {border-top: 1px solid; border-color: rgba(0, 0, 0, 0.175);}
+.card-body {
+    border-top: 1px solid;
+    border-color: rgba(0, 0, 0, 0.175);
+}
 
 #addNewButton {
     float: right;

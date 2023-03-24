@@ -2,13 +2,14 @@
     background-color: #bc2026;
     border-color: black;
     border-width: 2px;
+    width: 200%;
 }
 
 .btn-primary:hover {
     background-color: #bc2000;
 }
 
-.nav-link {
+/*.nav-link {
     color: #1892c3;
 }
 
@@ -22,4 +23,4 @@
 
 .accordion-button{
     color: #1478a1;
-}
+}*/

@@ -8,8 +8,9 @@ body {
 }
 
 #cardOne, #cardTwo, #cardThree {
-    margin-left: 156px;
-    margin-right: -6px;
+    margin-left: 100px;
+    margin-right: 100px;
+/*    margin-right: -6px;*/
     float: left;
 }
 
@@ -373,4 +374,8 @@ span {
         opacity: 1;
         height: 100%;
     }
+}
+
+.movie-poster {
+    object-fit: cover;
 }
