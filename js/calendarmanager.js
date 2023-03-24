@@ -96,6 +96,7 @@ function createCalendar(date, side) {
     }, !side ? 0 : 270);
 }
 
+
 createCalendar(currentDate);
 
 var todayDayName = document.getElementById("todayDayName");
