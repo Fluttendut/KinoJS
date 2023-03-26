@@ -14,6 +14,7 @@ async function fetchAny(url) {
     return await fetch(url, options)
         .then((res) => {
             if (res.status === 200) {
+                console.log("vi har fået 200")
                 return res.json()
             } else {
                 throw Error(res.statusText)

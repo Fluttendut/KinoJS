@@ -9,6 +9,38 @@
     background-color: #bc2000;
 }
 
+/*select, option {
+    width: 250px;
+}*/
+
+option {
+/*    overflow: hidden;
+    white-space: nowrap;
+!*    text-overflow: ellipsis;*!
+    display: flex;*/
+    width: 100%;
+    height: 100%;
+}
+
+.my-btn {
+    position: relative;
+    z-index: 1;
+    height: 30px;
+    width: 250px;
+/*    opacity: 0;*/
+    border: none;
+    background-color: #1c273a;
+}
+
+.my-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
 /*.nav-link {
     color: #1892c3;
 }

@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - minor fixes and tweaks">
-      <change afterPath="$PROJECT_DIR$/js/dropdown_booking.js" afterDir="false" />
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - minor fixes and tweaks v2&#10; - added script for populating dropdown menues (not working fully)">
+      <change afterPath="$PROJECT_DIR$/js/dropdownmenus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/generate_theater.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/seat-booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/seat-booking.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheetfrontpage.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetfrontpage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesheetmoviemanager.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheetmoviemanager.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/frontpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/moviemanager.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/moviemanager.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/addmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/addmovie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/seat-booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/seat-booking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dropdown_booking.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/fetchmovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/fetchmovies.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/seat-booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/seat-booking.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/signin.js" afterDir="false" />
@@ -44,31 +43,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/IdeaProjects/2022E/Uge47/EksamensprojektE22",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/IdeaProjects/2023F/Uge11/KinoJS&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IdeaProjects\2023F\Uge11\KinoJS\js" />
       <recent name="D:\Dokumenter\Java 2022\KinoJS\css" />
       <recent name="D:\Dokumenter\Java 2022\KinoJS" />
     </key>
@@ -110,6 +110,12 @@
       <workItem from="1679607915729" duration="794000" />
       <workItem from="1679619242408" duration="4007000" />
       <workItem from="1679626392776" duration="6021000" />
+      <workItem from="1679635612386" duration="791000" />
+      <workItem from="1679667086606" duration="16359000" />
+      <workItem from="1679691835513" duration="16328000" />
+      <workItem from="1679714794399" duration="1829000" />
+      <workItem from="1679800916775" duration="9585000" />
+      <workItem from="1679845874137" duration="5436000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>
@@ -258,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679607952892</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="CHANGES:&#10; - minor fixes and tweaks v2&#10; - added script for populating dropdown menues (not working fully)">
+      <created>1679635697511</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679635697511</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +304,7 @@
     <MESSAGE value="CHANGES:&#10; - moved add movie button in moviemanager.html" />
     <MESSAGE value="CHANGES:&#10; - added browser tab icons to all htmls" />
     <MESSAGE value="CHANGES:&#10; - minor fixes and tweaks" />
-    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - minor fixes and tweaks" />
+    <MESSAGE value="CHANGES:&#10; - minor fixes and tweaks v2&#10; - added script for populating dropdown menues (not working fully)" />
+    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - minor fixes and tweaks v2&#10; - added script for populating dropdown menues (not working fully)" />
   </component>
 </project>

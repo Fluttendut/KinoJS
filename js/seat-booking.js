@@ -1,11 +1,11 @@
-const theater_container = document.querySelector('.theater-container');
+const theater = document.querySelector('.theater');
 const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
-const movieSelect = document.getElementById('screenings');
+const movieSelect = document.getElementById('movies');
 
 populateUI();
-let ticketPrice = +movieSelect.value;
+let ticketPrice = +10/*+movieSelect.value;*/
 
 // Save selected movie index and price
 function setMovieData(movieIndex, moviePrice) {
@@ -57,7 +57,7 @@ movieSelect.addEventListener('change', (e) => {
 });
 
 // Seat click event
-theater_container.addEventListener('click', (e) => {
+theater.addEventListener('click', (e) => {
     if (e.target.classList.contains('seat') && !e.target.classList.contains('occupied')) {
         e.target.classList.toggle('selected');
 
