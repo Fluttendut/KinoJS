@@ -3,6 +3,9 @@ ddScreeningForm.addEventListener("submit", function (e) {
     e.preventDefault();
     removeElements('seat');
     removeElements('row');
+    removeElements('screen');
+    removeElements('auditorium');
+
 
     let data = JSON.parse(document.getElementById('screenings').value);
     console.log(data);
@@ -23,13 +26,15 @@ function generateSeatScript(numberOfRows, seatingCapacity, auditoriumNumber) {
     console.log(seatsPerRow)
     let count = seatingCapacity;
 
-    /*    const auditoriumDiv = document.createElement('div');
-        auditoriumDiv.innerText = `Auditorium ${auditoriumNumber}`;
-        theater.appendChild(auditoriumDiv);
+    const auditoriumDiv = document.createElement('div');
+    auditoriumDiv.innerText = `Auditorium ${auditoriumNumber}`;
+    auditoriumDiv.classList.add('auditorium');
+    theater.appendChild(auditoriumDiv);
 
-        const screen = document.createElement('div');
-        auditoriumDiv.innerText = `Screen #`;
-        theater.appendChild(screen);*/
+    const screenDiv = document.createElement('div');
+    screenDiv.innerText = `Screen`;
+    screenDiv.classList.add('screen');
+    theater.appendChild(screenDiv);
 
     for (let row = 1; row <= numberOfRows; row++) {
         const rowDiv = document.createElement('div');
@@ -41,7 +46,9 @@ function generateSeatScript(numberOfRows, seatingCapacity, auditoriumNumber) {
                 seatDiv.classList.add('seat');
                 seatDiv.setAttribute('data-seatnumber', `${row}${col}`);
                 seatDiv.setAttribute('data-rownumber', `${row}`);
-                /*                            seatDiv.innerText = `${row}${col}`;*/
+                /*
+                                                            seatDiv.innerText = `${row}${col}`;
+                */
                 count--
                 /*console.log(count)*/
 

@@ -1,6 +1,8 @@
 /*Movies Dropdown Menu*/
 const xhttp_movies = new XMLHttpRequest();
 const dropdownmenus = document.getElementsByClassName("movie");
+const dd_screenings = document.getElementsByClassName("screening");
+const ddMovieForm = document.getElementById("ddMoviesForm")
 
 let movies;
 xhttp_movies.onreadystatechange = function () {
@@ -26,7 +28,13 @@ xhttp_movies.open("GET", "http://localhost:8080/api/v1/movies", true);
 xhttp_movies.setRequestHeader('Authorization', 'Bearer ' + sessionStorage.getItem('token'));
 xhttp_movies.send();
 
-const ddMovieForm = document.getElementById("ddMoviesForm")
+ddMovieForm.addEventListener("change", function (e) {
+    removeElements('temp_options');
+    removeElements('seat');
+    removeElements('row');
+    removeElements('screen');
+    removeElements('auditorium');
+});
 
 ddMovieForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -36,7 +44,7 @@ ddMovieForm.addEventListener("submit", function (e) {
     console.log(body)
 
     const xhttp_screenings = new XMLHttpRequest();
-    let dd_screenings = document.getElementsByClassName("screening");
+
 
     let screenings;
     xhttp_screenings.onreadystatechange = function () {

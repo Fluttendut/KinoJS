@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.auditorium {
+    text-align: center;
+    font-size: 20px;
+    font-family: Roboto, serif
+}
+
 body {
     background-image: url("https://e0.pxfuel.com/wallpapers/182/698/desktop-wallpaper-classic-movie-classic-movie-poster.jpg");
     display: flex;
@@ -134,7 +140,7 @@ body {
     color: black;
     text-align: center;
     font-family: Roboto, serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 p.text {

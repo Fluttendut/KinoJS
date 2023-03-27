@@ -5,7 +5,7 @@ const total = document.getElementById('total');
 const screeningSelect = document.getElementById('screenings');
 let ticketPrice;
 
-ddScreeningForm.addEventListener("submit", function (e) {
+ddScreeningForm.addEventListener("submit", function () {
     let data = JSON.parse(screeningSelect.value);
     console.log(data);
     ticketPrice = data["values"]["ticketPrice"];

@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - got the generateSeatScript working">
+    <list default="true" id="91f05fb6-543e-40da-9dec-267c86e0536a" name="Changes" comment="CHANGES:&#10; - updated most scripts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/seat-booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/seat-booking.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/seat-booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/seat-booking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/dropdownmenus.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/dropdownmenus.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/generate_theater.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/generate_theater.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/seat-booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/seat-booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/signin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,7 @@
       <workItem from="1679714794399" duration="1829000" />
       <workItem from="1679800916775" duration="9585000" />
       <workItem from="1679845874137" duration="6662000" />
-      <workItem from="1679899486222" duration="12444000" />
+      <workItem from="1679899486222" duration="15875000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend">
       <created>1678814045270</created>
@@ -275,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679863123899</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="CHANGES:&#10; - updated most scripts">
+      <created>1679913644264</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679913644264</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +318,7 @@
     <MESSAGE value="CHANGES:&#10; - minor fixes and tweaks" />
     <MESSAGE value="CHANGES:&#10; - minor fixes and tweaks v2&#10; - added script for populating dropdown menues (not working fully)" />
     <MESSAGE value="CHANGES:&#10; - got the generateSeatScript working" />
-    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - got the generateSeatScript working" />
+    <MESSAGE value="CHANGES:&#10; - updated most scripts" />
+    <option name="LAST_COMMIT_MESSAGE" value="CHANGES:&#10; - updated most scripts" />
   </component>
 </project>
