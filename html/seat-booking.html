@@ -33,9 +33,9 @@
 -->
             <button type="submit" class="my-btn">
             <select id="movies" class="movie my-select" required >
-                <!--
-                                <option disabled selected value>Movie...</option>
-                -->
+<!--
+                                <option disabled value>Movie...</option>
+-->
             </select>
             </button>
         </form>
@@ -48,9 +48,7 @@
 -->
             <button type="submit" class="my-btn">
             <select id="screenings" class="screening my-select" required>
-                <!--
                             <option disabled selected value>Screening...</option>
-                -->
             </select>
             </button>
         </form>
@@ -58,17 +56,17 @@
 
     <ul class="showcase">
         <li>
-            <div class="seat"></div>
+            <div class="seat_showcase"></div>
             <small>N/A</small>
         </li>
 
         <li>
-            <div class="seat selected"></div>
+            <div class="seat_showcase selected"></div>
             <small>Selected</small>
         </li>
 
         <li>
-            <div class="seat occupied"></div>
+            <div class="seat_showcase occupied"></div>
             <small>Occupied</small>
         </li>
     </ul>
@@ -151,10 +149,13 @@
     </div>
 </div>
 
-
-<script src="/js/seat-booking.js"></script>
 <script src="/js/dropdownmenus.js"></script>
+<script src="/js/seat-booking.js"></script>
 <script src="/js/generate_theater.js"></script>
+
+<!--<script>
+    $( document ).ready($("#movies")[0].selectedIndex = 1,$("#screenings")[0].selectedIndex = 1)
+</script>-->
 
 </body>
 </html>

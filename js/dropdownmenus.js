@@ -1,6 +1,6 @@
 /*Movies Dropdown Menu*/
 const xhttp_movies = new XMLHttpRequest();
-let dropdownmenus = document.getElementsByClassName("movie");
+const dropdownmenus = document.getElementsByClassName("movie");
 
 let movies;
 xhttp_movies.onreadystatechange = function () {
@@ -10,9 +10,9 @@ xhttp_movies.onreadystatechange = function () {
             movies = JSON.parse(xhttp_movies.responseText);
             movies.forEach(movie => {
                 const option = document.createElement("option");
-/*
-                console.log('movie', movie)
-*/
+                /*
+                                console.log('movie', movie)
+                */
                 option.value = movie.movieId;
                 option.textContent = movie.title;
                 dropdownmenus[i].appendChild(option);
@@ -45,17 +45,20 @@ ddMovieForm.addEventListener("submit", function (e) {
             if (this.readyState === 4 && this.status === 200) {
                 screenings = JSON.parse(xhttp_screenings.responseText);
                 console.log(screenings);
-                screenings.forEach(screening => {
+                screenings.forEach((screening, index) => {
                     const option = document.createElement("option");
                     option.className = "temp_options"
-                    const values = {values: {
-                        'numberOfRows': screening.auditorium.numberOfRows,
-                        'seatingCapacity': screening.auditorium.seatingCapacity,
-                        'ticketPrice': screening.ticketPrice
-                    }}
-                    console.log(values);
+                    option.id = "opt" + index;
+                    console.log(option.id)
+                    const values = {
+                        values: {
+                            auditoriumNumber: screening.auditorium.auditoriumNumber,
+                            numberOfRows: screening.auditorium.numberOfRows,
+                            seatingCapacity: screening.auditorium.seatingCapacity,
+                            ticketPrice: screening.ticketPrice
+                        }
+                    }
                     option.value = JSON.stringify(values);
-                    console.log(option.value);
                     option.textContent = screening.startTime;
                     dd_screenings[i].appendChild(option);
                 });
@@ -71,7 +74,7 @@ ddMovieForm.addEventListener("submit", function (e) {
 })
 
 function removeElements(param) {
-    let get = document.querySelectorAll('.'+param+'');
+    let get = document.querySelectorAll('.' + param + '');
     get.forEach(element => {
         element.remove();
     });
