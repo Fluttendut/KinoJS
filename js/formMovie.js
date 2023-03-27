@@ -153,9 +153,3 @@ function getAllUrlParams(url) {
     return obj;
 
 }
-document.getElementById("inpTitle").value = getAllUrlParams().title;
-document.getElementById("inpGenre").value = getAllUrlParams().genre;
-document.getElementById("inpLength").value = getAllUrlParams().length;
-document.getElementById("inpRating").value = getAllUrlParams().rating;
-document.getElementById("inpAgeRestriction").value = getAllUrlParams().ageRestriction;
-document.getElementById("inpMovieId").value = getAllUrlParams().movieId;
